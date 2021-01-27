@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&family=Playfair+Display:wght@400;700&display=swap);
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+.container-fluid {
+  max-width: 80%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  width: 100%;
+  height: 10px;
+  background: url(/images/top-bar.svg?30a4256b4856c31e3d552abdf9f833e8);
+  background-size: cover;
+}
+
+.navbar {
+  margin: 20px 0;
+}
+.navbar .logo {
+  width: 109px;
+}
+.navbar .logo img {
+  width: 100%;
+}
+
+header {
+  margin: 100px 0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .container .bg-pattern {
+  position: absolute;
+}
+header .container .bg-pattern--1 {
+  top: 80px;
+  left: -100px;
+  z-index: 1;
+}
+header .container .bg-pattern--2 {
+  top: 180px;
+  right: -50px;
+  z-index: 1;
+}
+header .container .text {
+  max-width: 65%;
+  width: 65%;
+  text-align: center;
+  z-index: 999;
+  position: relative;
+}
+header .container .text h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Playfair Display";
+  margin-bottom: 10px;
+}
+header .container .text p {
+  font-weight: lighter;
+  margin: 0 0 40px 0;
+}
+header .container .text .call-to-action button {
+  width: 300px;
+  cursor: pointer;
+  border: 0;
+  background: #F0F1FE;
+  color: #838BFA;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  outline: none;
+  transition: 0.3s all;
+}
+header .container .text .call-to-action button:hover {
+  background: #EDEEFF;
+  color: #A6ACFF;
+}
+header .container .text .call-to-action p {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.34);
+}
+header .container .illustration {
+  max-width: 35%;
+  width: 35%;
+  z-index: 999;
+  position: relative;
+}
+header .container .illustration img {
+  width: 100%;
+}
+
+.converter {
+  max-width: 600px;
+  width: 600px;
+  margin: 0 auto;
+}
+.converter__top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 0 8px 0;
+}
+.converter__top h4 {
+  margin: 0;
+  font-family: "Playfair Display";
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.converter__top .progress {
+  font-size: 0.8rem;
+  color: #B4B4B4;
+}
+.converter__top .progress b {
+  color: #898484;
+}
+.converter__box {
+  border: 2px solid #F4F4F4;
+  border-radius: 6px;
+  background: #FFFFFF;
+  padding: 15px;
+}
+.converter__actions {
+  margin: 8px 0 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.converter__actions button {
+  border: none;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
+.converter__actions .cancel-all {
+  background: #FBFBFB;
+  color: #D2D1D1;
+  margin: 0 10px 0 0;
+}
+.converter__actions .cancel-all svg {
+  margin: 0 3px 0 0;
+  fill: #D2D1D1;
+}
+.converter__actions .download-all {
+  background: #FFF8E7;
+  color: #393939;
+}
+.converter__actions .download-all svg {
+  margin: 0 3px 0 0;
+  fill: #FFD063;
+}
+.converter .files .file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 15px 0;
+}
+.converter .files .file:last-child {
+  margin: 0;
+}
+.converter .files .file__summary {
+  display: flex;
+}
+.converter .files .file__preview {
+  width: 55px;
+  height: 55px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #F4F4F4;
+}
+.converter .files .file__preview--failed {
+  border-color: #FF304F;
+}
+.converter .files .file__preview--success {
+  border-color: #17B978;
+}
+.converter .files .file__preview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.converter .files .file__details {
+  margin: 0 0 0 10px;
+}
+.converter .files .file__name {
+  font-weight: bold;
+}
+.converter .files .file__size {
+  font-size: 0.9rem;
+}
+.converter .files .file__added-at {
+  font-size: 0.7rem;
+  color: #A9A9A9;
+}
+.converter .files .file__action--failed {
+  display: flex;
+  color: #FF304F;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.converter .files .file__action--failed svg {
+  margin: 0 0 0 3px;
+}
+.converter .files .file__action--success {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  background: #E9F6F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.converter .files .file__action--success svg {
+  fill: #17B978;
+}
+
+footer {
+  margin: 30px 0 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.52);
+}
