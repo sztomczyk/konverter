@@ -16,11 +16,13 @@
 
     <title>Konverter</title>
 
+    @livewireStyles
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
     @yield('content')
 
+    @livewireScripts
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script>

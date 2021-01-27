@@ -72,7 +72,19 @@ header .container .text p {
   font-weight: lighter;
   margin: 0 0 40px 0;
 }
-header .container .text .call-to-action button {
+header .container .text .call-to-action {
+  position: relative;
+  text-align: center;
+}
+header .container .text .call-to-action input {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+header .container .text .call-to-action label {
+  text-align: center;
+  display: block;
   width: 300px;
   cursor: pointer;
   border: 0;
@@ -84,8 +96,9 @@ header .container .text .call-to-action button {
   font-size: 1.1rem;
   outline: none;
   transition: 0.3s all;
+  margin: 0 auto;
 }
-header .container .text .call-to-action button:hover {
+header .container .text .call-to-action label:hover {
   background: #EDEEFF;
   color: #A6ACFF;
 }
@@ -241,4 +254,19 @@ footer {
   justify-content: center;
   font-size: 11px;
   color: rgba(0, 0, 0, 0.52);
+}
+
+.upload-error {
+  color: #FF304F;
+}
+
+.choose-target-filetype button {
+  margin: 10px auto;
+  border: none;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
 }
